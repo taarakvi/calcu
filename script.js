@@ -4,8 +4,9 @@ let buttons = document.querySelectorAll(".btn")
 let string = "";
 let arr = Array.from(buttons)
 arr.forEach(button =>{
+    // console.log(button)
    button.addEventListener("click",(e)=>{
-    let x = -10;
+    // let x = -10;
     if(e.target.innerHTML === '='){
         string = eval(string)
         inputT.value = string
@@ -73,16 +74,18 @@ let select = document.querySelector(".day")
 number().forEach(element =>{
     // console.log(element)
     let option = document.createElement("option")
-    option.value = number();
-    option.textContent = element;
+    // option.classList.add("N-OP")
+    option.value = element;
+    option.textContent = element
     select.appendChild(option)
+    
 })
 //days2
 let select2 = document.querySelector(".dayX")
 number().forEach(element =>{
     // console.log(element)
     let option = document.createElement("option")
-    option.value = number();
+    option.value = element;
     option.textContent = element;
     select2.appendChild(option)
 })
@@ -91,7 +94,6 @@ number().forEach(element =>{
 let mont = function(){
     let arr = []
     for(let i = 1; i<=12; i++){
-        // console.log(i)
         arr[i] = i;
     }
     return arr;
@@ -99,7 +101,7 @@ let mont = function(){
 let Mselect = document.querySelector(".month")
 mont().forEach(element =>{
     let option = document.createElement("option")
-    option.value = mont();
+    option.value = element;
     option.textContent = element;
     Mselect.appendChild(option)
 })
@@ -107,7 +109,7 @@ mont().forEach(element =>{
 let Mselect2 = document.querySelector(".monthX")
 mont().forEach(element =>{
     let option = document.createElement("option")
-    option.value = mont();
+    option.value = element;
     option.textContent = element;
     Mselect2.appendChild(option)
 })
@@ -123,7 +125,7 @@ let year = function(){
 let yr = document.querySelector(".year")
 year().forEach(element =>{
     let option = document.createElement("option")
-    option.value = year()
+    option.value = element;
     option.textContent = element;
     yr.appendChild(option)
 })
@@ -131,24 +133,32 @@ year().forEach(element =>{
 let yr2 = document.querySelector(".year2")
 year().forEach(element =>{
     let option = document.createElement("option")
-    option.value = year()
+    option.value = element;
     option.textContent = element;
     yr2.appendChild(option)
 })
 
-// sect3
-let k = "ddmmyy"
-const obj = {
-  age:90,
-  name:"makur",
-  vill:"saudi",
-  quelification:"graduate"
-}
+// calculate
+let calcu = document.querySelector(".c3B")
+calcu.addEventListener("click",()=>{
+    // age
+    let yy = document.querySelector(".yy")
+    let mm = document.querySelector(".mm")
+    let dd = document.querySelector(".dd")
+    yy.textContent = "Year  :   " +(yr2.value-yr.value);
+    mm.textContent = "Month :   " +(Mselect2.value-Mselect.value);
+    dd.textContent = "days  :   " +(select2.value-select.value);
 
-let x = `age = ${obj.age}\nname = ${obj.name}\nvill = ${obj.vill}\nqueli = ${obj.quelification}`
-console.log(x)
- 
-let y = document.querySelector(".bx")
+    // summary
+    let obj = {
+        year: yr2.value-yr.value,
+        month: 12*(yr2.value-yr.value),
+        days: 365*(yr2.value-yr.value)
+    }
+    let rslt = ` Year = ${obj.year}\n Month = ${obj.month}\n  Days = ${obj.days}`
+    let summary = document.querySelector(".summary")
+    summary.textContent = rslt;
+})
 
 
 // let fun = function(){
