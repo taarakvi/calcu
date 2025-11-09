@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+        <div class="sect1">
+            <div class="mainC">
+             <div class="ic">
+                    <i id="home-id" class="fa-solid fa-house"></i>
+                    <i id="m-op" class="fa-solid fa-boxes-stacked"></i>
+                    <i id="bar" class="fa-solid fa-bars"></i>
+                </div>
+                <!-- <div class="bar-option">
+                    <div class="bar-option-in">
+                        <div class="history-B">History</div>
+                        <div>hack</div>
+                        <div>system</div>
+                    </div>
+                </div> -->
+                <input class="inputT" type="" placeholder="0">
+                    <div class="button-row">
+                        <button class="operator btn">/100</button>
+                        <button class="operator btn">C</button>
+                        <button class="operator btn">DEL</button>
+                        <button class="operator op btn">/</button>
+                    </div>
+                    <div class="button-row">
+                        <button class="btn">1</button>
+                        <button class="btn">2</button>
+                        <button class="btn">3</button>
+                        <button class="operator op btn">*</button>
+                    </div>
+                    <div class="button-row">
+                        <button class="btn">4</button>
+                        <button class="btn">5</button>
+                        <button class="btn">6</button>
+                        <button class="operator op btn">-</button>
+                    </div>
+                    <div class="button-row">
+                        <button class="btn">7</button>
+                        <button class="btn">8</button>
+                        <button class="btn">9</button>
+                        <button class="operator op btn">+</button>
+                    </div>
+                <div class="button-row">
+                    <button class="btn"><i class="fa-solid fa-plus-minus"></i></button>
+                    <button class="btn">0</button>
+                    <button class="btn">.</button>
+                    <button class="operator op btn">=</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- sect2 -->
+    <div class="sect2">
+        <div id="sect2">
+            <div class="sect2-main">
+                <div class="box age">age</div>
+                <div class="box">discount</div>
+                <div class="box">time</div>
+                <div class="box">percentage</div>
+                <div class="box">mass</div>
+                <div class="box">hack</div>
+            </div>
+            <button class="backB backB1"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </div>
+
+    <!-- section 3 -->
+     <div class="cont3">
+        <div class="sect3">
+            
+            <div class="age-box">
+                 <!-- section1 -->
+                <div> 
+                    <!-- days -->
+                    <select class="day">
+                        <option value="days" disabled selected>day</option>
+                    </select>
+                    <!-- month -->
+                    <select class="month">
+                        <option disabled selected>mont</option>
+                    </select>
+                    <!-- year -->
+                    <select class="year">
+                        <option disabled selected>year</option>
+                    </select>
+                </div>
+                <label>date of birth</label>
+                <!-- section2 -->
+                <div>
+                    <select class="dayX">
+                        <option value="days" disabled selected>day</option>
+                    </select>
+                    <select class="monthX">
+                        <option disabled selected>mont</option>
+                    </select>
+                    <select class="year2">
+                        <option disabled selected>year</option>
+                    </select>
+                </div>
+                <label>age at the date of</label>
+                <button class="c3B">calculate</button>
+            </div>
+            <div class="output">
+                <h3>result</h3>
+            </div>
+            <button class="c3B2 backB"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+     </div>
+        <script src="script.js"></script>
+    </body>
+</html>

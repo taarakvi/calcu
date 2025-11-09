@@ -1,0 +1,165 @@
+let inputT = document.querySelector(".inputT")
+let buttons = document.querySelectorAll(".btn")
+
+let string = "";
+let arr = Array.from(buttons)
+arr.forEach(button =>{
+   button.addEventListener("click",(e)=>{
+    let x = -10;
+    if(e.target.innerHTML === '='){
+        string = eval(string)
+        inputT.value = string
+        console.log(string)
+    }else if(e.target.innerHTML === 'C'){
+        string = "";
+        inputT.value = string;
+    }else if(e.target.innerHTML === 'DEL'){
+        string = string.slice(0,string.length-1)
+        inputT.value = string;
+    }
+    else{
+         string += e.target.innerHTML
+         console.log(string)
+         inputT.scrollLeft = inputT.scrollWidth
+        inputT.value = string
+    }
+}) 
+})
+
+// block hardware key input
+inputT.addEventListener("keydown", (e) => {
+  e.preventDefault();
+  e.target.blur();
+});
+//clickbale option
+let mOP = document.querySelector("#m-op")
+let sect1 = document.querySelector(".container")
+let sect2 = document.querySelector(".sect2")
+let backB = document.querySelector(".backB1")
+sect2.style.display ="none"
+mOP.addEventListener("click",()=>{
+    sect2.style.display ="block"
+    sect1.style.display = "none"
+})
+backB.addEventListener("click",()=>{
+    sect2.style.display ="none"
+    sect1.style.display = "block"
+})
+
+// age event
+let age = document.querySelector(".age")
+let backB2 = document.querySelector(".c3B2")
+let container3 = document.querySelector(".cont3")
+age.addEventListener("click",()=>{
+    container3.style.display ="block"
+    sect2.style.display = "none"
+})
+backB2.addEventListener("click",()=>{
+    container3.style.display ="none"
+    sect2.style.display = "block"
+})
+
+
+//AGE form
+//days
+let number = function(){
+    let arr = [];
+    for(let i = 1; i<=31; i++){
+    // console.log(i);
+    arr[i]= i
+}return arr;
+}
+let select = document.querySelector(".day")
+number().forEach(element =>{
+    // console.log(element)
+    let option = document.createElement("option")
+    option.value = number();
+    option.textContent = element;
+    select.appendChild(option)
+})
+//days2
+let select2 = document.querySelector(".dayX")
+number().forEach(element =>{
+    // console.log(element)
+    let option = document.createElement("option")
+    option.value = number();
+    option.textContent = element;
+    select2.appendChild(option)
+})
+
+//mont
+let mont = function(){
+    let arr = []
+    for(let i = 1; i<=12; i++){
+        // console.log(i)
+        arr[i] = i;
+    }
+    return arr;
+}
+let Mselect = document.querySelector(".month")
+mont().forEach(element =>{
+    let option = document.createElement("option")
+    option.value = mont();
+    option.textContent = element;
+    Mselect.appendChild(option)
+})
+//MONTH2
+let Mselect2 = document.querySelector(".monthX")
+mont().forEach(element =>{
+    let option = document.createElement("option")
+    option.value = mont();
+    option.textContent = element;
+    Mselect2.appendChild(option)
+})
+
+//YEAR
+let year = function(){
+    let arr = []
+     for(let i = 1947; i<=2050; i++){
+        arr[i] = i;
+     }
+     return arr;
+}
+let yr = document.querySelector(".year")
+year().forEach(element =>{
+    let option = document.createElement("option")
+    option.value = year()
+    option.textContent = element;
+    yr.appendChild(option)
+})
+//YEAR2
+let yr2 = document.querySelector(".year2")
+year().forEach(element =>{
+    let option = document.createElement("option")
+    option.value = year()
+    option.textContent = element;
+    yr2.appendChild(option)
+})
+
+// sect3
+let k = "ddmmyy"
+const obj = {
+  age:90,
+  name:"makur",
+  vill:"saudi",
+  quelification:"graduate"
+}
+
+let x = `age = ${obj.age}\nname = ${obj.name}\nvill = ${obj.vill}\nqueli = ${obj.quelification}`
+console.log(x)
+ 
+let y = document.querySelector(".bx")
+
+
+// let fun = function(){
+// let op = document.querySelectorAll(".operator")
+// let Aop = Array.from(op)
+// Aop.forEach((elmnt)=>{
+//     console.log(elmnt)
+// })  
+// }
+
+
+
+
+

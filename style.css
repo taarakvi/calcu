@@ -1,0 +1,253 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* .container{
+    display: none;
+} */
+.sect1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(148, 146, 146);
+    /* border: 2px solid blue; */
+}
+/* .bar-option{
+    position: fixed;
+    border: 1px solid red;
+} */
+.mainC {
+    width: 70%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.ic{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 20px;
+    font-size: 20px;
+    /* cursor: pointer; */
+}
+.ic i:active{
+    transform: scale(0.9);
+}
+.inputT{
+    width:70%;
+    height: 3rem;
+    text-align: end;
+    padding-right: 10px;
+    margin:1rem 0px 3rem 0px ;
+    border: none;
+    border-radius: 1rem;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    box-shadow: 0px 5px 10px 0px rgb(20, 20, 20) ;
+    padding: 10px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    /* text-wrap:initial; */
+    outline: none;
+    /* overflow: auto; */
+    
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-inline: 2rem;
+    margin: 1rem;
+    box-shadow: 0px 10px 10px 5px rgb(20, 20, 20) ;
+    border: none;
+    font-size: 18px;
+    font-weight:800;
+    /* cursor: pointer; */
+}
+.button-row{
+    width: 70%;
+    margin-top: 0.5rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn:active{
+     transform: scale(0.97);
+     background-color: #ec0b0bf6;
+}
+.operator{
+    background-color: #f06114ce;
+}
+.op{
+    font-size: 25px;
+}
+
+/* sect2 */
+.sect2{
+    display: none;
+    /* width: 100%; */
+}
+#sect2{
+    /* display: none; */
+    /* width: 100%; */
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(148, 146, 146);
+    /* border: 1px solid red; */
+}
+.sect2-main{
+    width: 70%;
+    background-color: rgb(148, 146, 146);
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.sect2-main .box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 4rem 1rem 1rem 1rem;
+    text-align: center;
+    align-content: center;
+    border-radius: 50px;
+    box-shadow: 0px 10px 10px 5px rgb(20, 20, 20) ;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    /* background-color: blue; */
+}
+/* .sect2-main .box:hover{
+    transform: translateY(-2px) scale(1.05);
+    cursor: pointer;
+} */
+.sect2-main .box:active{
+    transform: scale(0.97);
+}
+.backB{
+    /* background-color: rgb(232, 78, 58); */
+    cursor: pointer;
+    margin:1rem;
+    width: 4rem;
+    height:1.7rem ;
+    font-weight: 600;
+    font-size: 20px;
+    background: none;
+    border: none;
+    border-radius: 8px;
+}
+.backB:active{
+    transform: scale(0.9);
+}
+
+/* SECT3 */
+.cont3{
+    display: none;
+}
+.sect3{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(148, 146, 146);
+    height: 100vh;
+    /* border: 1px solid black; */
+    /* padding: 1rem; */
+}
+.age-box{
+    /* border: 2px solid red; */
+    width: 50%;
+    /* height: 50vh; */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.age-box select{
+    /* height: 3rem; */
+    width: 5rem;
+    padding: 10px;
+    outline: none;
+    height: 3rem;
+    font-size: 17px;
+    text-align: center;
+    background-color: white;
+}
+.age-box label{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform:capitalize;
+    margin-bottom: 1rem;
+}
+.c3B{
+    height: 1.5rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+    /* border-radius:10px; */
+}
+.c3B:active{
+    transform: scale(0.97);
+    background-color: rgb(159, 219, 20);
+}
+.sect3 .output{
+    width:50%;
+    border-top: 1px solid black;
+    padding: 1rem;
+    height: 50vh;
+}
+/* media */
+@media(max-width:500px){
+.ic{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 20px;
+}
+.sect1{
+    height: 100vh;
+}
+.mainC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 425px;
+    background-color: rgb(148, 146, 146);
+}
+.inputT{
+    width: 90%;
+    height:5.5rem;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.btn{
+    width:60px;
+    height:60px;
+    border-radius: 50px;
+    margin: 1vh;
+    margin-top:1.2vh;
+}
+.button-row{
+    width: 90%;
+}
+.sect2-main{
+   width: 100%;
+}
+.age-box{
+    width: 90%;
+    /* border: 2px solid yellow; */
+}
+.sect3 .output{
+    width: 90%;
+}
+}
+
