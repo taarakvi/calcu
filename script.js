@@ -160,7 +160,7 @@ calcu.addEventListener("click",()=>{
     summary.textContent = rslt;
 
     // Birthday
-    let birthday = new Date(yr.value,Mselect.value,select.value)
+    let birthday = new Date(yr.value,Mselect.value-1,select.value)
     // console.log(birthday.toDateString())
     let today = new Date(yr2.value,Mselect2.value,select2.value);
     let nextBirthday = new Date(today.getFullYear(), birthday.getMonth(), birthday.getDate())
@@ -170,7 +170,7 @@ calcu.addEventListener("click",()=>{
     let total = nextBirthday-today
     let xx = total/(1000*60*60*24)
     let cMM = (Math.ceil(xx/30))
-    let cDD = (Math.ceil(xx%30))
+    let cDD = xx%30
     // birthday display
     let birth = document.querySelector(".B-date")
     birth.textContent = nextBirthday.toDateString()
