@@ -163,6 +163,7 @@
 }
 .age-box{
     /* border: 2px solid red; */
+    margin-top: 1rem;
     width: 50%;
     height: 50vh;
     padding: 1rem;
