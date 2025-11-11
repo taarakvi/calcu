@@ -158,7 +158,32 @@ calcu.addEventListener("click",()=>{
     let rslt = ` Year = ${obj.year}\n Month = ${obj.month}\n  Days = ${obj.days}`
     let summary = document.querySelector(".summary")
     summary.textContent = rslt;
+
+    // Birthday
+    let birthday = new Date(yr.value,Mselect.value,select.value)
+    // console.log(birthday.toDateString())
+    let today = new Date(yr2.value,Mselect2.value,select2.value);
+    let nextBirthday = new Date(today.getFullYear(), birthday.getMonth(), birthday.getDate())
+    if(nextBirthday<today){
+        nextBirthday.setFullYear(today.getFullYear()+1)
+    }
+    let total = nextBirthday-today
+    let xx = total/(1000*60*60*24)
+    let cMM = (Math.ceil(xx/30))
+    let cDD = (Math.ceil(xx%30))
+    // birthday display
+    let birth = document.querySelector(".B-date")
+    birth.textContent = nextBirthday.toDateString()
+    // day and month
+    let bm = document.querySelector(".Bm")
+    let bd = document.querySelector(".Bd")
+    // bDM.textContent = "month : " +(cMM) + "days : " +(cDD)
+    bm.textContent = (cMM) + "  month";
+    bd.textContent = (cDD) + "  days";
+    console.log(cMM, cDD)
+    console.log(nextBirthday.toDateString())
 })
+
 
 
 // let fun = function(){

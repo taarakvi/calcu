@@ -157,7 +157,7 @@
     flex-direction: column;
     align-items: center;
     background-color: rgb(148, 146, 146);
-    height: 100vh;
+    /* height: 100vh; */
     /* border: 1px solid black; */
     /* padding: 1rem; */
 }
@@ -203,7 +203,7 @@
     width:50%;
     border-top: 1px solid black;
     padding: 1rem;
-    height: 50vh;
+    /* height: 50vh; */
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 
@@ -220,6 +220,11 @@
     text-transform: capitalize;
     margin-bottom: 1rem;
 }
+.ttl{
+    color: blue;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
 
 .summary{
     align-content:start;
@@ -228,6 +233,26 @@
     font-weight: 600;
     margin-top: 1rem;
 }
+.birthdayMain .birthday{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    /* font-size: 20px; */
+    align-items: end;
+}
+.birthday i{
+    font-size: 4rem;
+    color: rgb(245, 136, 11);
+    /* box-shadow: 10px 5px 4px 2px black; */
+}
+.B-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* media */
 @media(max-width:500px){
 .ic{
