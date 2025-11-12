@@ -163,21 +163,6 @@ calcu.addEventListener("click",()=>{
     dd.textContent = "days  :   " +(sprD+31);
 
        let obj = {
-        year: sprY-1,
-        month: 12*(sprY+11),
-        days: 365*(sprY+31)
-    }
-    let rslt = ` Year = ${obj.year}\n Month = ${obj.month}\n  Days = ${obj.days}`
-    let summary = document.querySelector(".summary")
-    summary.textContent = rslt;
-    }
-
-    else{ 
-    yy.textContent = "Year  :   " +(sprY);
-    mm.textContent = "Month :   " +(sprM);
-    dd.textContent = "days  :   " +(sprD);
-
-       let obj = {
         year: sprY,
         month: 12*(sprY),
         days: 365*(sprY)
@@ -186,15 +171,21 @@ calcu.addEventListener("click",()=>{
     let summary = document.querySelector(".summary")
     summary.textContent = rslt;
     }
+    
+    else{ 
+    yy.textContent = "Year  :   " +(sprY);
+    mm.textContent = "Month :   " +(sprM);
+    dd.textContent = "days  :   " +(sprD);
+    }
     // summary
-    // let obj = {
-    //     year: sprY,
-    //     month: 12*(sprY),
-    //     days: 365*(sprY)
-    // }
-    // let rslt = ` Year = ${obj.year}\n Month = ${obj.month}\n  Days = ${obj.days}`
-    // let summary = document.querySelector(".summary")
-    // summary.textContent = rslt;
+    let obj = {
+        year: sprY,
+        month: 12*(sprY),
+        days: 365*(sprY)
+    }
+    let rslt = ` Year = ${obj.year}\n Month = ${obj.month}\n  Days = ${obj.days}`
+    let summary = document.querySelector(".summary")
+    summary.textContent = rslt;
 
     // Birthday
     let birthday = new Date(yr.value,Mselect.value-1,select.value)
