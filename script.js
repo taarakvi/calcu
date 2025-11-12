@@ -82,9 +82,16 @@ number().forEach(element =>{
 })
 //days2
 let select2 = document.querySelector(".dayX")
+
+// let date = new Date()
+// let ddy = document.querySelector(".ddy").value = date.getDate()
+// let ddd = document.querySelector(".ddd").value = date.getMonth()
+// let yyy = document.querySelector(".yyy").value = date.getFullYear()
+// console.log(date)
+
 number().forEach(element =>{
     // console.log(element)
-    let option = document.createElement("option")
+    let option = document.createElement("option");
     option.value = element;
     option.textContent = element;
     select2.appendChild(option)
@@ -145,24 +152,54 @@ calcu.addEventListener("click",()=>{
     let yy = document.querySelector(".yy")
     let mm = document.querySelector(".mm")
     let dd = document.querySelector(".dd")
-    yy.textContent = "Year  :   " +(yr2.value-yr.value);
-    mm.textContent = "Month :   " +(Mselect2.value-Mselect.value);
-    dd.textContent = "days  :   " +(select2.value-select.value);
 
-    // summary
-    let obj = {
-        year: yr2.value-yr.value,
-        month: 12*(yr2.value-yr.value),
-        days: 365*(yr2.value-yr.value)
+    let sprY = yr2.value-yr.value;
+    let sprM = Mselect2.value-Mselect.value;
+    let sprD = select2.value-select.value;
+
+    if(Mselect2.value<Mselect.value || select2.value<select.value){
+    yy.textContent = "Year  :   " +(sprY-1);
+    mm.textContent = "Month :   " +(sprM+11);
+    dd.textContent = "days  :   " +(sprD+31);
+
+       let obj = {
+        year: sprY-1,
+        month: 12*(sprY+11),
+        days: 365*(sprY+31)
     }
     let rslt = ` Year = ${obj.year}\n Month = ${obj.month}\n  Days = ${obj.days}`
     let summary = document.querySelector(".summary")
     summary.textContent = rslt;
+    }
+
+    else{ 
+    yy.textContent = "Year  :   " +(sprY);
+    mm.textContent = "Month :   " +(sprM);
+    dd.textContent = "days  :   " +(sprD);
+
+       let obj = {
+        year: sprY,
+        month: 12*(sprY),
+        days: 365*(sprY)
+    }
+    let rslt = ` Year = ${obj.year}\n Month = ${obj.month}\n  Days = ${obj.days}`
+    let summary = document.querySelector(".summary")
+    summary.textContent = rslt;
+    }
+    // summary
+    // let obj = {
+    //     year: sprY,
+    //     month: 12*(sprY),
+    //     days: 365*(sprY)
+    // }
+    // let rslt = ` Year = ${obj.year}\n Month = ${obj.month}\n  Days = ${obj.days}`
+    // let summary = document.querySelector(".summary")
+    // summary.textContent = rslt;
 
     // Birthday
     let birthday = new Date(yr.value,Mselect.value-1,select.value)
     // console.log(birthday.toDateString())
-    let today = new Date(yr2.value,Mselect2.value,select2.value);
+    let today = new Date(yr2.value,Mselect2.value-1,select2.value);
     let nextBirthday = new Date(today.getFullYear(), birthday.getMonth(), birthday.getDate())
     if(nextBirthday<today){
         nextBirthday.setFullYear(today.getFullYear()+1)
@@ -177,11 +214,17 @@ calcu.addEventListener("click",()=>{
     // day and month
     let bm = document.querySelector(".Bm")
     let bd = document.querySelector(".Bd")
-    // bDM.textContent = "month : " +(cMM) + "days : " +(cDD)
-    bm.textContent = (cMM) + "  month";
+    if(Mselect.value-1 === Mselect2.value-1 && select.value === select2.value){
+        bm.textContent = "Happy"
+        bd.textContent = "Birthday"
+    }
+    else{
+      bm.textContent = (cMM-1) + "  month";
     bd.textContent = (cDD) + "  days";
     console.log(cMM, cDD)
-    console.log(nextBirthday.toDateString())
+    console.log(nextBirthday.toDateString())   
+    }
+   
 })
 
 
