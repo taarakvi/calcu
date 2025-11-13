@@ -152,17 +152,13 @@
     display: none;
 }
 .sect3{
+    /* border: 2px solid red; */
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
     background-color: rgb(148, 146, 146);
-    /* height: 100vh; */
-    /* border: 1px solid black; */
-    /* padding: 1rem; */
 }
 .age-box{
-    /* border: 2px solid red; */
     margin-top: 2rem;
     /* width: 50%; */
     height: 50vh;
@@ -171,6 +167,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    
 }
 .age-box select{
     /* height: 3rem; */
@@ -181,6 +178,8 @@
     font-size: 17px;
     text-align: center;
     background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 0px black;
 }
 .age-box label{
     font-size: 20px;
@@ -194,7 +193,8 @@
     display: flex;
     align-items: center;
     background-color: yellow;
-    /* border-radius:10px; */
+    border-radius:7px;
+    box-shadow: 0px 1px 3px 0px black;
 }
 .c3B:active{
     transform: scale(0.97);
@@ -254,6 +254,81 @@
     align-items: center;
 }
 
+/* sect 4 */
+.cont4{
+    display: none;
+    background-color: rgb(148, 146, 146);
+}
+.sect4{
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgb(148, 146, 146);
+}
+.uib{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: large;
+    font-weight:bold;
+    gap: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: red;
+    /* filter: blur(8px); */
+    box-shadow: 0px 5px 10px 0px black;
+    border-radius: 10px;
+}
+.uib input{
+    padding: 1rem;
+    font-size:17px;
+    font-weight: 600;
+    outline:none;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 5px 5px 0px black;
+    
+}
+.uib .d-countB{
+    width: 3.5rem;
+    height: 1.5rem;
+    border-radius: 7px;
+    background-color: yellow;
+}
+.d-countB:active{
+    transform: scale(0.9);
+}
+.ob{
+    text-transform: capitalize;
+    margin: 2rem;
+    /* height: 30vh; */
+    /* border: 2px solid blue; */
+    width: 300px;
+    padding: 1rem;
+    border-radius:10px;
+    box-shadow: 0px 5px 10px 0px black;
+    background-color:rgba(0, 0, 255, 0.911);
+    color: white;
+}
+.inOB{
+    height: 25vh;
+    /* border: 1px solid green; */
+    text-align: center;
+    align-content: center;
+}
+.sect4BB{
+    margin: 1rem;
+    background-color: yellow;
+    width: 2.5rem;
+    border-radius: 5px;
+}
+.sect4BB:active{
+    transform: scale(0.9);
+}
 /* media */
 @media(max-width:500px){
 .ic{
@@ -297,6 +372,10 @@
 }
 .sect3 .output{
     width: 90%;
+}
+/* sect4 */
+.ob{
+    width: 250px;
 }
 }
 

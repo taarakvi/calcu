@@ -82,13 +82,6 @@ number().forEach(element =>{
 })
 //days2
 let select2 = document.querySelector(".dayX")
-
-// let date = new Date()
-// let ddy = document.querySelector(".ddy").value = date.getDate()
-// let ddd = document.querySelector(".ddd").value = date.getMonth()
-// let yyy = document.querySelector(".yyy").value = date.getFullYear()
-// console.log(date)
-
 number().forEach(element =>{
     // console.log(element)
     let option = document.createElement("option");
@@ -218,6 +211,30 @@ calcu.addEventListener("click",()=>{
    
 })
 
+// sect4
+let cont4 = document.querySelector(".cont4")
+let discount = document.querySelector(".discount")
+discount.addEventListener("click",()=>{
+     cont4.style.display ="block"
+    sect2.style.display = "none"
+})
+let priceIn = document.querySelector(".priceInput")
+let offerIn = document.querySelector(".offerInput")
+let dCount = document.querySelector(".d-countB")
+dCount.addEventListener("click",()=>{
+    // console.log("yy")
+    let x = priceIn.value*offerIn.value/100
+    let y = priceIn.value-x;
+    let final = document.querySelector(".inOB")
+    final.textContent = "Final-Price : "+y;
+    console.log("final price : ",y)
+})
+// backBB
+let sect4BB = document.querySelector(".sect4BB")
+sect4BB.addEventListener("click",()=>{
+     cont4.style.display ="none"
+    sect2.style.display = "block"
+})
 
 
 // let fun = function(){
