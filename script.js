@@ -243,6 +243,12 @@ timeContainer.addEventListener("click",()=>{
     cont5.style.display = "block"
     sect2.style.display = "none"
 })
+// backButton
+let sect5BB = document.querySelector(".sect5BB")
+sect5BB.addEventListener("click",()=>{
+     cont5.style.display ="none"
+    sect2.style.display = "block"
+})
 
 // let fun = function(){
 // let op = document.querySelectorAll(".operator")
