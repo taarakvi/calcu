@@ -236,6 +236,13 @@ sect4BB.addEventListener("click",()=>{
     sect2.style.display = "block"
 })
 
+// cont5 section
+let cont5 = document.querySelector(".cont5")
+let timeContainer = document.querySelector(".timeC")
+timeContainer.addEventListener("click",()=>{
+    cont5.style.display = "block"
+    sect2.style.display = "none"
+})
 
 // let fun = function(){
 // let op = document.querySelectorAll(".operator")
