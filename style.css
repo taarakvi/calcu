@@ -117,7 +117,7 @@
 .sect2-main .box{
     width: 200px;
     height: 200px;
-    border: 2px solid black;
+    border: 1px solid black;
     margin: 4rem 1rem 1rem 1rem;
     text-align: center;
     align-content: center;
@@ -126,12 +126,11 @@
     font-size: 25px;
     font-weight: 600;
     text-transform: capitalize;
-    /* background-color: blue; */
+    background-color: rgb(15, 236, 181);
 }
-/* .sect2-main .box:hover{
-    transform: translateY(-2px) scale(1.05);
-    cursor: pointer;
-} */
+.sect2-main .box i{
+    font-size: 100px;
+}
 .sect2-main .box:active{
     transform: scale(0.97);
 }
@@ -275,6 +274,7 @@
     border: 2px solid red;
     display: flex;
     flex-direction: column;
+    justify-content: c;
     align-items: center;
     text-transform: capitalize;
     font-size: large;
@@ -323,6 +323,8 @@
     /* border: 1px solid green; */
     text-align: center;
     align-content: center;
+    font-size: 18px;
+    font-weight: bold;
 }
 .sect4BB{
     margin: 1rem;
@@ -343,6 +345,7 @@
     justify-content: center;
     margin: 1rem;
     height: 95vh;
+    color: black;
 }
 .timeInputBox{
     display: flex;
@@ -357,14 +360,18 @@
     border-radius: 10px;
 }
 .timeInputBox select{
-    width: 5rem;
+    width: 7rem;
     height: 3rem;
     padding: 0px 10px 0px 10px;
     outline: none;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     box-shadow: 0px 5px 5px 0px black;
     border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    text-transform: capitalize;
+
 }
 .timeInputBox input{
     /* width: 5rem; */
@@ -374,6 +381,7 @@
     text-align: center;
     font-size: 17px;
     font-weight: 600;
+     background-color: white;
     box-shadow: 0px 5px 5px 0px black;
     border: none;
     border-radius: 10px;
@@ -385,8 +393,21 @@
    gap: 1rem;
 }
 .inputSect-B{
+    border: 1px solid black;
+    /* border-right: 2px solid white; */
+    border-radius: 10px;
+    /* border-bottom-right-radius: 10px;  */
+    padding: 5px;
+    /* border-top-left-radius: 10px; */
+    /* border-bottom-left-radius: 10px; */
+    background-color: white;
     font-size: large;
     font-weight: 600;
+    box-shadow: 0px 5px 5px 0px black;
+}
+.inputSect-B select{
+    background-color: transparent;
+    box-shadow: none;
 }
 .timeCout{
     margin-top: 1rem;
@@ -395,7 +416,15 @@
     height: 150px;
     border-radius: 10px;
     padding: 10px;
+    /* text-align: center; */
+}
+.timeValueBox{
+    /* border: 2px solid red; */
+    height: 50px;
+    font-weight: 600;
     text-align: center;
+    text-transform: capitalize;
+    align-content: center;
 }
 .convertorB{
     width: 4rem;
@@ -404,9 +433,17 @@
     background-color: yellow;
     box-shadow: 0px 2px 5px 0px black;
     border: none;
+    font-weight: bold;
 }
 .convertorB:active{
    transform:scale(0.9);
+}
+.sect5BB{
+    width: 2rem;
+    font-size: 15px;
+    font-weight: 600;
+    background:none;
+    border: none;
 }
 /* media */
 @media(max-width:500px){

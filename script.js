@@ -236,7 +236,7 @@ sect4BB.addEventListener("click",()=>{
     sect2.style.display = "block"
 })
 
-// cont5 section
+// cont 5 section
 let cont5 = document.querySelector(".cont5")
 let timeContainer = document.querySelector(".timeC")
 timeContainer.addEventListener("click",()=>{
@@ -249,6 +249,123 @@ sect5BB.addEventListener("click",()=>{
      cont5.style.display ="none"
     sect2.style.display = "block"
 })
+// FOR SELECT OPTIONS
+// inputSection1
+let timeArr = ["year","month","week","day","hour","minut","second","millisecond"]
+// console.log(timeArr)
+let timeOption1 = document.querySelector(".timeOp1")
+timeArr.forEach(y =>{
+    let option = document.createElement("option")
+    option.value = y
+    option.textContent = y
+    timeOption1.appendChild(option)
+    // console.log(option)
+})
+// inputSection2
+let timeOption2 = document.querySelector(".timeOp2")
+timeArr.forEach(y =>{
+    let option = document.createElement("option")
+    option.value = y
+    option.textContent = y
+    timeOption2.appendChild(option)
+    // console.log(option)
+})
+let timeNinput = document.querySelector(".timeInput")
+let result = function(){
+    let y = ""
+    // hours
+    if(timeOption1.value === "hour" && timeOption2.value === "hour"){
+            y = "hour : "+(timeNinput.value);
+            console.log("Hour : ",y)
+    }
+    else if(timeOption1.value === "hour" && timeOption2.value === "minut"){
+            y = "Minut : "+(timeNinput.value*60);
+            console.log("Minut : ",y)
+    }
+    else if(timeOption1.value === "hour" && timeOption2.value === "second"){
+            y = "Second : "+(timeNinput.value*120);
+            console.log("Second : ",y)
+    }
+    else if(timeOption1.value === "hour" && timeOption2.value === "Millisecond"){
+            y = "MilliSecond : "+(timeNinput.value*3600);
+            console.log("MilliSecond : ",y)
+    }
+//     // year
+    else if(timeOption1.value === "year" && timeOption2.value === "year"){
+            y = "year : "+(timeNinput.value);
+            console.log("year : ",y)
+    }
+    else if(timeOption1.value === "year" && timeOption2.value === "month"){
+            y = "month : "+(timeNinput.value*12);
+            console.log("month : ",y)
+    }
+    else if(timeOption1.value === "year" && timeOption2.value === "week"){
+            y = "week : "+(timeNinput.value*52);
+            console.log("week : ",y)
+    }
+    else if(timeOption1.value === "year" && timeOption2.value === "day"){
+            y = "days : "+(timeNinput.value*365);
+            console.log("days : ",y)
+    }
+//     // month
+    else if(timeOption1.value === "month" && timeOption2.value === "month"){
+            y = "month : "+(timeNinput.value);
+            console.log("month : ",y)
+    }
+    else if(timeOption1.value === "month" && timeOption2.value === "week"){
+            y = "week : "+(timeNinput.value*4);
+            console.log("week : ",y)
+    }
+    else if(timeOption1.value === "month" && timeOption2.value === "day"){
+            y = "days : "+(timeNinput.value*30);
+            console.log("days : ",y)
+    }
+// week
+    else if(timeOption1.value === "week" && timeOption2.value === "week"){
+            y = "week : "+(timeNinput.value);
+            console.log("week : ",y)
+    }
+    else if(timeOption1.value === "week" && timeOption2.value === "day"){
+            y = "days : "+(timeNinput.value*7);
+            console.log("days : ",y)
+    }
+//     // days
+//     else if(timeOption1.value === "day" && timeOption2.value === "day"){
+//             y = "days : "+(timeNinput.value*1);
+//             console.log("days : ",y)
+//     }
+//     if(timeOption1.value === "day" && timeOption2.value === "hour"){
+//             y = "hour : "+(timeNinput.value*12);
+//             console.log("Hour : ",y)
+//     }
+//     else if(timeOption1.value === "day" && timeOption2.value === "minut"){
+//             y = "Minut : "+(timeNinput.value*1440);
+//             console.log("Minut : ",y)
+//     }
+//     else if(timeOption1.value === "day" && timeOption2.value === "second"){
+//             y = "Second : "+(timeNinput.value*86400);
+//             console.log("Second : ",y)
+//     }
+//     else if(timeOption1.value === "day" && timeOption2.value === "Millisecond"){
+//             y = "MilliSecond : "+(timeNinput.value*43200000);
+//             console.log("MilliSecond : ",y)
+//     }
+
+    else{
+        y = "invalid"
+        console.log("invalid expresion")
+    }
+    return y;
+} 
+
+// sect5-BUTTON
+let convertorB = document.querySelector(".convertorB") 
+let timeValueBox = document.querySelector(".timeValueBox")
+convertorB.addEventListener("click",()=>{
+    timeValueBox.innerText = result()
+    // console.log("wlcom")
+})
+
 
 // let fun = function(){
 // let op = document.querySelectorAll(".operator")
