@@ -367,6 +367,46 @@ convertorB.addEventListener("click",()=>{
 })
 
 
+// sect6
+let cont6 = document.querySelector(".cont6")
+let persentC = document.querySelector(".persentC")
+persentC.addEventListener("click",()=>{
+    cont6.style.display = "block"
+    sect2.style.display = "none"
+})
+let persentBB = document.querySelector(".persentBB")
+persentBB.addEventListener("click",()=>{
+    cont6.style.display ="none"
+    sect2.style.display = "block"
+})
+
+
+// SECT6
+let massC = document.querySelector(".massC")
+let cont7 = document.querySelector(".cont7")
+massC.addEventListener("click",()=>{
+    cont7.style.display = "block"
+    sect2.style.display = "none"
+})
+let massBB = document.querySelector(".massBB")
+massBB.addEventListener("click",()=>{
+    cont7.style.display ="none"
+    sect2.style.display = "block"
+})
+
+// sect8
+let hackC = document.querySelector(".hackC")
+let cont8 = document.querySelector(".cont8")
+hackC.addEventListener("click",()=>{
+    cont8.style.display = "block"
+    sect2.style.display = "none"
+})
+let hackSub = document.querySelector(".hackSub")
+hackSub.addEventListener("click",()=>{
+    cont8.style.display ="none"
+    sect2.style.display = "block"
+})
+
 // let fun = function(){
 // let op = document.querySelectorAll(".operator")
 // let Aop = Array.from(op)

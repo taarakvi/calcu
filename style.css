@@ -2,9 +2,6 @@
     padding: 0px;
     margin: 0px;
 }
-/* .container{
-    display: none;
-} */
  body{
     background-color: rgb(148, 146, 146);
     color: black;
@@ -52,7 +49,6 @@
     font-size: 2.2rem;
     font-weight: 600;
     outline: none;
-    /* overflow: auto; */
     
 }
 .btn{
@@ -66,7 +62,6 @@
     border: none;
     font-size: 18px;
     font-weight:800;
-    /* cursor: pointer; */
 }
 .button-row{
     width: 70%;
@@ -90,23 +85,18 @@
 /* sect2 */
 .sect2{
     display: none;
-    /* width: 100%; */
 }
 #sect2{
-    /* display: none; */
-    /* width: 100%; */
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(148, 146, 146);
-    /* border: 1px solid red; */
 }
 .sect2-main{
     width: 70%;
     background-color: rgb(148, 146, 146);
-    /* border: 2px solid blue; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -153,7 +143,6 @@
     display: none;
 }
 .sect3{
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,7 +158,6 @@
     
 }
 .age-box select{
-    /* height: 3rem; */
     width: 5rem;
     padding: 10px;
     outline: none;
@@ -203,8 +191,6 @@
     width:50%;
     border-top: 1px solid black;
     padding: 1rem;
-    /* height: 60vh; */
-    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 /* calculate */
@@ -213,7 +199,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid red; */
     gap: .5rem;
     padding: .5rem;
     font-weight: 600;
@@ -238,13 +223,11 @@
     gap: 1rem;
     justify-content: center;
     padding: 1rem;
-    /* font-size: 20px; */
     align-items: end;
 }
 .birthday i{
     font-size: 4rem;
     color: rgb(245, 136, 11);
-    /* box-shadow: 10px 5px 4px 2px black; */
 }
 .B-box{
     display: flex;
@@ -259,10 +242,8 @@
     background-color: rgb(148, 146, 146);
 }
 .sect4{
-    /* width: 70%; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     background-color: rgb(148, 146, 146);
 }
@@ -279,7 +260,6 @@
     margin: 1rem;
     padding: 1rem;
     background-color: red;
-    /* filter: blur(8px); */
     box-shadow: 0px 5px 10px 0px black;
     border-radius: 10px;
 }
@@ -306,8 +286,6 @@
 .ob{
     text-transform: capitalize;
     margin: 0.5rem;
-    /* height: 30vh; */
-    /* border: 2px solid blue; */
     width: 300px;
     padding: 1rem;
     border-radius:10px;
@@ -317,7 +295,6 @@
 }
 .inOB{
     height: 25vh;
-    /* border: 1px solid green; */
     text-align: center;
     align-content: center;
     font-size: 18px;
@@ -342,21 +319,17 @@
 .sect5{
     display: flex;
     justify-content: center;
-    /* margin: 1rem; */
-    /* height: 95vh; */
     color: black;
+    height: 95vh;
 }
 .timeInputBox{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid black; */
     gap: 2rem;
     padding: 1rem;
     text-transform: capitalize;
-    /* box-shadow: 0px 5px 5px 0px black; */
-    /* border-radius: 10px; */
 }
 .timeInputBox select{
     width: 7rem;
@@ -373,7 +346,6 @@
 
 }
 .timeInputBox input{
-    /* width: 5rem; */
     height: 3rem;
     padding: 0px 10px 0px 10px;
     outline: none;
@@ -393,12 +365,8 @@
 }
 .inputSect-B{
     border: 1px solid black;
-    /* border-right: 2px solid white; */
     border-radius: 10px;
-    /* border-bottom-right-radius: 10px;  */
     padding: 5px;
-    /* border-top-left-radius: 10px; */
-    /* border-bottom-left-radius: 10px; */
     background-color: white;
     font-size: large;
     font-weight: 600;
@@ -415,10 +383,8 @@
     height: 150px;
     border-radius: 10px;
     padding: 10px;
-    /* text-align: center; */
 }
 .timeValueBox{
-    /* border: 2px solid red; */
     height: 50px;
     font-weight: 600;
     text-align: center;
@@ -445,8 +411,194 @@
     border: none;
 }
 /* sect6 */
+.cont6{
+    display: none;
+}
+.sect6{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 3rem;
+    height: 90vh;
+}
+.sect6Main{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.sect6Main input{
+    height: 2rem;
+    padding: 10px;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    box-shadow: 0px 2px 5px 0px black;
+}
+.perOutput{
+    border: 1px solid black;
+    width: 240px;
+    border-radius: 7px;
+    padding: 5px;
+}
+.persB{
+    width: 3rem;
+    height: 1.5rem;
+    border: none;
+    background-color:red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.persB:active{
+    transform: scale(0.9);
+}
+.perResult{
+    height: 150px;
+    width: 240px;
+    text-align: center;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.persentBB{
+    width: 2rem;
+    font-size: large;
+    background: none;
+    border: none;
+}
 
+/* sect7 */
+.cont7{
+    display: none;
+}
 
+.sect7{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 3rem;
+    height: 90vh;
+}
+.sect7Main{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    font-size: 20px;
+}
+.sect7Main select{
+    width: 10rem;
+    /* height: 2rem; */
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 600;
+    box-shadow: 0px 2px 5px 0px black;
+    text-align: center;
+}
+.sect7Main input{
+    height: 2rem;
+    width: 9rem;
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    box-shadow: 0px 2px 5px 0px black;
+}
+.massOutput{
+    border: 1px solid black;
+    width: 240px;
+    border-radius: 7px;
+    padding: 5px;
+}
+.massB{
+    width: 3rem;
+    height: 1.5rem;
+    border: none;
+    background-color:red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.massB:active{
+    transform: scale(0.9);
+}
+.massResult{
+    height: 100px;
+    width: 240px;
+    text-align: center;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.massBB{
+    width: 2rem;
+    font-size: large;
+    background: none;
+    border: none;
+}
+.cont8{
+    display: none;
+}
+.sect8{
+    display: flex;
+    /* flex-direction: column; */
+    padding: 1rem;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+.sect8Main{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    align-items: center;
+    border: 2px solid black;
+    padding: 1rem;
+    box-shadow: 0px 2px 5px 0px black;
+    border-radius: 10px;
+}
+.sect8Main .hacksInput{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px black;
+    font-size: 17px;
+    font-weight: 600;
+}
+.sect8Main .hackCheck{
+    width: 30px;
+    height: 30px;
+}
+.sect8Main .hackSub{
+    padding: 5px;
+    background-color: yellow;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.sect8Main .hackSub:active{
+    transform: scale(0.9);
+}
 
 /* media */
 @media(max-width:500px){
@@ -487,7 +639,6 @@
 }
 .age-box{
     width: 90%;
-    /* border: 2px solid yellow; */
 }
 .sect3 .output{
     width: 90%;
