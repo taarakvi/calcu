@@ -286,7 +286,7 @@ let result = function(){
             y = "Second : "+(timeNinput.value*120);
             console.log("Second : ",y)
     }
-    else if(timeOption1.value === "hour" && timeOption2.value === "Millisecond"){
+    else if(timeOption1.value === "hour" && timeOption2.value === "millisecond"){
             y = "MilliSecond : "+(timeNinput.value*3600);
             console.log("MilliSecond : ",y)
     }
@@ -329,27 +329,27 @@ let result = function(){
             y = "days : "+(timeNinput.value*7);
             console.log("days : ",y)
     }
-//     // days
-//     else if(timeOption1.value === "day" && timeOption2.value === "day"){
-//             y = "days : "+(timeNinput.value*1);
-//             console.log("days : ",y)
-//     }
-//     if(timeOption1.value === "day" && timeOption2.value === "hour"){
-//             y = "hour : "+(timeNinput.value*12);
-//             console.log("Hour : ",y)
-//     }
-//     else if(timeOption1.value === "day" && timeOption2.value === "minut"){
-//             y = "Minut : "+(timeNinput.value*1440);
-//             console.log("Minut : ",y)
-//     }
-//     else if(timeOption1.value === "day" && timeOption2.value === "second"){
-//             y = "Second : "+(timeNinput.value*86400);
-//             console.log("Second : ",y)
-//     }
-//     else if(timeOption1.value === "day" && timeOption2.value === "Millisecond"){
-//             y = "MilliSecond : "+(timeNinput.value*43200000);
-//             console.log("MilliSecond : ",y)
-//     }
+    // days
+    else if(timeOption1.value === "day" && timeOption2.value === "day"){
+            y = "days : "+(timeNinput.value*1);
+            console.log("days : ",y)
+    }
+    else if(timeOption1.value === "day" && timeOption2.value === "hour"){
+            y = "hour : "+(timeNinput.value*12);
+            console.log("Hour : ",y)
+    }
+    else if(timeOption1.value === "day" && timeOption2.value === "minut"){
+            y = "Minut : "+(timeNinput.value*1440);
+            console.log("Minut : ",y)
+    }
+    else if(timeOption1.value === "day" && timeOption2.value === "second"){
+            y = "Second : "+(timeNinput.value*86400);
+            console.log("Second : ",y)
+    }
+    else if(timeOption1.value === "day" && timeOption2.value === "millisecond"){
+            y = "MilliSecond : "+(timeNinput.value*43200000);
+            console.log("MilliSecond : ",y)
+    }
 
     else{
         y = "invalid"
