@@ -8,7 +8,7 @@ arr.forEach(button =>{
    button.addEventListener("click",(e)=>{
     // let x = -10;
     if(e.target.innerHTML === '='){
-        string = eval(string)
+        string = eval(string)+hackFunction()
         inputT.value = string
         console.log(string)
     }else if(e.target.innerHTML === 'C'){
@@ -449,7 +449,7 @@ massB.addEventListener("click",()=>{
         massResult.textContent = x;
         console.log(x)
     }
-    
+    // gram
     else if(massOptionA.value == "gram" && massOptionB.value == "kiloGram"){
          let x = (massInput.value/1000)+"kg";
         massResult.textContent = x;
@@ -465,7 +465,7 @@ massB.addEventListener("click",()=>{
         massResult.textContent = x;
         console.log(x)
     }
-
+// milligram
     else if(massOptionA.value == "mili gram" && massOptionB.value == "kiloGram"){
          let x = (massInput.value/1000000)+"kg";
         massResult.textContent = x;
@@ -500,6 +500,13 @@ hackSub.addEventListener("click",()=>{
     cont8.style.display ="none"
     sect2.style.display = "block"
 })
+
+let hackFunction = function(){
+    // console.log("msdhoni")
+    let hacksInput = document.querySelector(".hacksInput")
+    let x = Number(hacksInput.value)
+    return x
+};hackFunction()
 
 // let fun = function(){
 // let op = document.querySelectorAll(".operator")
