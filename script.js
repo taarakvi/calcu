@@ -379,9 +379,27 @@ persentBB.addEventListener("click",()=>{
     cont6.style.display ="none"
     sect2.style.display = "block"
 })
+// condition
+let persentInput = document.querySelector(".persentInput")
+let ofPersent = document.querySelector(".of-persent")
+let persB = document.querySelector(".persB")
+let perResult = document.querySelector(".perResult")
+persB.addEventListener("click",()=>{
+   let x;
+   if(ofPersent.value == ""){
+    ofPersent.value = 1;
+    x = persentInput.value*ofPersent.value/100
+    perResult.textContent = x
+    console.log(x)
+   }else{
+    x = persentInput.value*ofPersent.value/100
+    perResult.textContent = x
+    console.log(x)
+   }
+   
+})
 
-
-// SECT6
+// SECT - 7
 let massC = document.querySelector(".massC")
 let cont7 = document.querySelector(".cont7")
 massC.addEventListener("click",()=>{
@@ -393,6 +411,82 @@ massBB.addEventListener("click",()=>{
     cont7.style.display ="none"
     sect2.style.display = "block"
 })
+// conditions
+let massArray = ["kiloGram","gram","mili gram"]
+let massOptionA = document.querySelector(".massOption-A")
+let massOptionB = document.querySelector(".massOption-B")
+let massInput = document.querySelector(".massInput")
+let massResult = document.querySelector(".massResult")
+massArray.forEach(element =>{
+    // console.log(element)
+    let option = document.createElement("option")
+    option.value = element;
+    option.textContent = element
+    massOptionA.appendChild(option)
+})
+massArray.forEach(element =>{
+    let option = document.createElement("option")
+    option.value = element;
+    option.textContent = element
+    massOptionB.appendChild(option)
+    // console.log(option)
+
+})
+let massB = document.querySelector(".massB")
+massB.addEventListener("click",()=>{
+    if(massOptionA.value == "kiloGram" && massOptionB.value == "kiloGram"){
+        let x = massInput.value+"Kg";
+        massResult.textContent = x;
+        console.log(x)
+    }
+    else if(massOptionA.value == "kiloGram" && massOptionB.value == "gram"){
+         let x = (massInput.value*1000)+"g";
+        massResult.textContent = x;
+        console.log(x)
+    }
+    else if(massOptionA.value == "kiloGram" && massOptionB.value == "mili gram"){
+         let x = (massInput.value*1000000)+"mg";
+        massResult.textContent = x;
+        console.log(x)
+    }
+    
+    else if(massOptionA.value == "gram" && massOptionB.value == "kiloGram"){
+         let x = (massInput.value/1000)+"kg";
+        massResult.textContent = x;
+        console.log(x)
+    }
+    else if(massOptionA.value == "gram" && massOptionB.value == "gram"){
+         let x = massInput.value+"g";
+        massResult.textContent = x;
+        console.log(x)
+    }
+    else if(massOptionA.value == "gram" && massOptionB.value == "mili gram"){
+         let x = (massInput.value*1000)+"mg";
+        massResult.textContent = x;
+        console.log(x)
+    }
+
+    else if(massOptionA.value == "mili gram" && massOptionB.value == "kiloGram"){
+         let x = (massInput.value/1000000)+"kg";
+        massResult.textContent = x;
+        console.log(x)
+    }
+    else if(massOptionA.value == "mili gram" && massOptionB.value == "gram"){
+         let x = (massInput.value/1000)+"g";
+        massResult.textContent = x;
+        console.log(x)
+    }
+    else if(massOptionA.value == "mili gram" && massOptionB.value == "mili gram"){
+         let x = (massInput.value)+"mg";
+        massResult.textContent = x;
+        console.log(x)
+    }
+
+    else{
+        massResult.textContent = "invalid"
+    }
+})
+
 
 // sect8
 let hackC = document.querySelector(".hackC")
