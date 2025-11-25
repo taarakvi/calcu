@@ -149,7 +149,6 @@
     background-color: rgb(148, 146, 146);
 }
 .age-box{
-    margin-top: 2rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -182,10 +181,12 @@
     background-color: yellow;
     border-radius:7px;
     box-shadow: 0px 1px 3px 0px black;
+    border: none;
+    font-size: 15px;
 }
 .c3B:active{
     transform: scale(0.97);
-    background-color: rgb(159, 219, 20);
+    /* background-color: rgb(159, 219, 20); */
 }
 .sect3 .output{
     width:50%;
@@ -525,10 +526,6 @@
     width: 240px;
     border-radius: 7px;
     padding: 5px;
-}
-
-option{
-    width: 10px;
 }
 
 .massB{
